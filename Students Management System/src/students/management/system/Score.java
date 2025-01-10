@@ -75,9 +75,9 @@ public class Score {
     //cheack whether the student id or semester number exists or not
     public boolean isSidSemesterNoExist(int sid, int semesterNo) {
         try {
-            ps = con.prepareStatement("select * from score where sid = ? and semester = ?");
+            ps = con.prepareStatement("select * from score where student_id = ? and semester = ?");
             ps.setInt(1, sid);
-            ps.setInt(1, semesterNo);
+            ps.setInt(2, semesterNo);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 return true;

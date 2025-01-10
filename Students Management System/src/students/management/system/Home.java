@@ -2348,7 +2348,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        if (SearchField1.getText().isEmpty()) {
+        if (SearchField2.getText().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Search field is empty");
         } else {
             jTable3.setModel(new DefaultTableModel(null, new Object[]{"ID", "Student ID", "Semester",
